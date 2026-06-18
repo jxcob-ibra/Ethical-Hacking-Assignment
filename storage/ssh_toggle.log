@@ -1,0 +1,12 @@
+2026-06-18 08:20:41 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_ssh.sh
+2026-06-18 08:20:41 - Return: 0 - Output: [*] Enabling weak SSH credentials (demo mode)
+[+] Applied weak password to local SSH account: student
+[+] Weak credentials set to student/password123
+[+] File: storage/ssh/credentials.txt
+[+] SSH endpoint (if enabled): localhost:2222
+2026-06-18 08:20:41 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_ssh.sh
+2026-06-18 08:20:41 - Return: 0 - Output: [*] Enabling weak SSH credentials (demo mode)
+[+] Applied weak password to local SSH account: student
+[+] Weak credentials set to student/password123
+[+] File: storage/ssh/credentials.txt
+[+] SSH endpoint (if enabled): localhost:2222

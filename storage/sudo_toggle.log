@@ -1,0 +1,10 @@
+2026-06-18 08:20:41 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-18 08:20:41 - Return: 0 - Output: [*] Enabling weak sudo configuration (demo mode)
+[+] Weak sudo configuration applied
+[+] Student user can now escalate privileges without password
+[+] File: /etc/sudoers.d/student_weak_sudo
+2026-06-18 08:20:41 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-18 08:20:41 - Return: 0 - Output: [*] Enabling weak sudo configuration (demo mode)
+[+] Weak sudo configuration applied
+[+] Student user can now escalate privileges without password
+[+] File: /etc/sudoers.d/student_weak_sudo
