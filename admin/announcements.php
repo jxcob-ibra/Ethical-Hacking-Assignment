@@ -3,7 +3,6 @@
  * MyEduConnect - Admin Announcements Page
  * Learning Management System
  */
-//hamza test
 
 require_once '../app/config/config.php';
 require_once '../app/security/functions.php';

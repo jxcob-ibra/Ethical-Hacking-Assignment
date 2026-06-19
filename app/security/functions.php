@@ -636,7 +636,9 @@ function applyVulnerabilitySideEffects($name, $enabled)
         if (is_file($script)) {
             $output = [];
             $returnVar = 0;
+
             exec('sudo ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
+
             $outputStr = implode("\n", $output);
             @file_put_contents($logFile, date('Y-m-d H:i:s') . " - Return: $returnVar - Output: " . $outputStr . "\n", FILE_APPEND);
         } else {
