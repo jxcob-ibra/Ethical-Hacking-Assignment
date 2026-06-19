@@ -621,7 +621,7 @@ function applyVulnerabilitySideEffects($name, $enabled)
         if (is_file($script)) {
             $output = [];
             $returnVar = 0;
-            exec('sudo sh ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
+            exec('sudo ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
             $outputStr = implode("\n", $output);
             @file_put_contents($logFile, date('Y-m-d H:i:s') . " - Return: $returnVar - Output: " . $outputStr . "\n", FILE_APPEND);
         } else {
@@ -636,7 +636,7 @@ function applyVulnerabilitySideEffects($name, $enabled)
         if (is_file($script)) {
             $output = [];
             $returnVar = 0;
-            exec('sudo sh ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
+            exec('sudo ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
             $outputStr = implode("\n", $output);
             @file_put_contents($logFile, date('Y-m-d H:i:s') . " - Return: $returnVar - Output: " . $outputStr . "\n", FILE_APPEND);
         } else {
@@ -776,28 +776,76 @@ function isRequestHttps()
 
 function enforceApiTransportPolicy()
 {
+    $host = parse_url(APP_URL, PHP_URL_HOST) ?: 'localhost';
+
     $httpsRequired = !isVulnerabilityEnabled('http_api_communication');
     $isHttps = isRequestHttps();
 
+    // SECURE MODE
     if ($httpsRequired && !$isHttps) {
-        http_response_code(403);
-        header('Content-Type: application/json');
-        echo json_encode([
-            'ok' => false,
-            'error' => 'HTTPS required while HTTP API communication is disabled.',
-            'mode' => 'https',
-        ]);
+
+        $target =
+            'https://' .
+            $host .
+            ':8443' .
+            $_SERVER['REQUEST_URI'];
+
+        header("Location: $target");
         exit;
     }
 
+    // VULNERABLE MODE
     if (!$httpsRequired && $isHttps) {
-        http_response_code(403);
-        header('Content-Type: application/json');
-        echo json_encode([
-            'ok' => false,
-            'error' => 'HTTP required while HTTP API communication vulnerability is enabled.',
-            'mode' => 'http',
-        ]);
+
+        $target =
+            'http://' .
+            $host .
+            ':8080' .
+            $_SERVER['REQUEST_URI'];
+
+        header("Location: $target");
         exit;
     }
+}
+
+function enforceWebsiteTransportPolicy()
+{
+    $host = parse_url(APP_URL, PHP_URL_HOST) ?: 'localhost';
+
+    $httpsRequired = !isVulnerabilityEnabled('http_api_communication');
+    $isHttps = isRequestHttps();
+
+    // SECURE MODE
+    if ($httpsRequired && !$isHttps) {
+
+        $target =
+            'https://' .
+            $host .
+            ':8443' .
+            $_SERVER['REQUEST_URI'];
+
+        header("Location: $target");
+        exit;
+    }
+
+    // VULNERABLE MODE
+    if (!$httpsRequired && $isHttps) {
+
+        $target =
+            'http://' .
+            $host .
+            ':8080' .
+            $_SERVER['REQUEST_URI'];
+
+        header("Location: $target");
+        exit;
+    }
+}
+
+// Apply website transport policy
+if (
+    isset($_SERVER['REQUEST_URI']) &&
+    strpos($_SERVER['REQUEST_URI'], '/api/') === false
+) {
+    enforceWebsiteTransportPolicy();
 }
