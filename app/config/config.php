@@ -74,3 +74,4 @@ if (session_status() === PHP_SESSION_NONE) {
     session_name(SESSION_NAME);
     session_start();
 }
+
