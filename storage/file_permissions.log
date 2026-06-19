@@ -1,0 +1,396 @@
+2026-06-19 11:56:11 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:56:11 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:56:13 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:56:13 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:56:16 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:56:16 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:56:17 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:56:17 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:56:21 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:56:21 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:56:39 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:56:39 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:56:39 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:56:39 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:56:39 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:56:39 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:56:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:56:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:57:34 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:57:34 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:57:38 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:57:38 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:57:38 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:57:38 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:57:38 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:57:38 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:57:41 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:57:41 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:57:59 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:57:59 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:59:16 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 11:59:16 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 11:59:16 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:59:16 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:59:16 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:59:16 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 11:59:41 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 11:59:41 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:00:20 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 12:00:20 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:00:23 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 12:00:23 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:00:23 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:00:23 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:00:23 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:00:23 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:00:26 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:00:26 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:01:15 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:01:15 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:01:19 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:01:19 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:01:19 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 12:01:19 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:01:20 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 12:01:20 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:03:51 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0777 - Success: NO
+2026-06-19 12:03:51 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:03:51 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:03:51 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:03:51 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0777 - Success: NO
+2026-06-19 12:03:51 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:30:48 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:30:48 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:30:48 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:30:48 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:33:43 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:33:43 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:33:43 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:33:43 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:33:44 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:33:44 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:33:45 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:33:45 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:47 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:47 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:47 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:47 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:53 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:53 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:56 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:56 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:56 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:56 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:56 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:58:56 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:02 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:02 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:02 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:02 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:02 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:02 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:10 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:10 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:10 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:10 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:10 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:10 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:18 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:18 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 12:59:19 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:19 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:19 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 12:59:19 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:00:06 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:00:06 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:01:26 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:01:26 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:01:29 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:01:29 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:01:29 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:01:29 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:01:29 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:01:29 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:01:33 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:01:33 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:07:07 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:07:07 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:00 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:00 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:00 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:00 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:00 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:00 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:07 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:07 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:15 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:15 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:40 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:19:40 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:41 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:41 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:43 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:43 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:46 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:46 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:55 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:55 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:58 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:20:58 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:04 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:04 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:04 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:21:04 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:21:04 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:21:04 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:21:08 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:21:08 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:21:08 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:08 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:08 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:08 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:21:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:22:31 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:22:31 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:22:54 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:22:54 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:15 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:15 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:24 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:24 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:26 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:26 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:38 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:38 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:23:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:24:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:24:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:24:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:24:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:24:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:24:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:06 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:06 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:13 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:13 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:13 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:13 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:13 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:13 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:40 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:40 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:46 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:46 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:46 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:46 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:47 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:47 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:59 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:25:59 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:26:14 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:26:14 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:26:17 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:26:17 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:26:17 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:26:17 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:26:18 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:26:18 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:26:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:26:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:27:30 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:27:30 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:49 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:49 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:50 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:50 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:53 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:53 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:53 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:53 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:55 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:28:55 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:34:47 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:34:47 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:34:47 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:34:47 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:34:48 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:34:48 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:34:49 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:34:49 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:32 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:32 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:54 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:54 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:57 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:57 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:35:57 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:35:57 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:35:57 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:35:57 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:36:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:36:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:37:55 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:37:55 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:38:00 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:38:00 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:38:00 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:38:00 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:38:00 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:38:00 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:38:02 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:38:02 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:23 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:23 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:26 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:26 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:30 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:30 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 13:39:30 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:39:30 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:39:30 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 13:39:30 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:02:59 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:02:59 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:02:59 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:02:59 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:03:00 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:03:00 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:04:16 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:04:16 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:04:16 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:04:16 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:04:16 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:04:16 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:10:33 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:10:33 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:10:33 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:10:33 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:10:33 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:10:33 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:19 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:19 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:22 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:22 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:11:22 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:11:22 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:11:23 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:11:23 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:13:44 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:13:44 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:13:44 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:13:44 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:13:45 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:13:45 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:39:06 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:39:06 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:39:06 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:39:06 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:46:18 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:46:18 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:46:52 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:46:52 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:46:52 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:46:52 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:47:29 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:47:29 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 14:47:29 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 14:47:29 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:01 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:01 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:02 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:02 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:05 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:05 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:05 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:05 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:08 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:08 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:17 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:17 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:17 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:17 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:18 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:18 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:24:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:26:50 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:26:50 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:26:54 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:26:54 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:26:54 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:26:54 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:26:54 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:26:54 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:26:58 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:26:58 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:28:11 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:28:11 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:39:31 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:39:31 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:39:31 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:39:31 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:40:52 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:40:52 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:40:52 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:40:52 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:42 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:42 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:47 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:47 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:47 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:47 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:48 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:48 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:52 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:52 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:46:53 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:46:53 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:46:53 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:46:53 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:46:55 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:46:55 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:47:45 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:47:45 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:47:50 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:47:50 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-19 15:47:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:50 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:50 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:53 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:53 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:53 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:53 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:54 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:54 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:56 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-19 15:47:56 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES

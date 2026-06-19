@@ -14,6 +14,7 @@ $definitions = [
     'backup_file_exposure' => 'Backup File Exposure',
     'weak_password_hashing' => 'Weak Password Hashing',
     'http_api_communication' => 'HTTP API Communication',
+    'weak_file_permissions' => 'Weak File Permissions',
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -197,6 +198,81 @@ foreach ($settings as $row) {
                                     <code class="flex-grow-1"><?php echo APP_URL; ?>/admin/user-database-exposure.php</code>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h5 class="mb-0">File Permissions Status</h5>
+                    </div>
+                    <div class="card-body">
+                        <?php 
+                        $fileStatus = getFilePermissionsStatus(); 
+                        $hasErrors = false;
+                        foreach ($fileStatus as $status) {
+                            if (!$status['matches_expected']) {
+                                $hasErrors = true;
+                                break;
+                            }
+                        }
+                        ?>
+                        
+                        <?php if (isset($_SESSION['file_permissions_error'])): ?>
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <i class="bi bi-exclamation-triangle"></i>
+                                <?php echo htmlspecialchars($_SESSION['file_permissions_error']); ?>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                            <?php unset($_SESSION['file_permissions_error']); ?>
+                        <?php endif; ?>
+                        
+                        <?php if ($hasErrors): ?>
+                            <div class="alert alert-warning">
+                                <i class="bi bi-exclamation-triangle"></i>
+                                <strong>Warning:</strong> Some files do not match their expected security state. This may be due to Docker/Windows filesystem restrictions.
+                            </div>
+                        <?php endif; ?>
+                        
+                        <div class="row g-3">
+                            <?php foreach ($fileStatus as $fileName => $status): ?>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded <?php echo !$status['matches_expected'] ? 'border-warning' : ''; ?>">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <strong><?php echo htmlspecialchars($fileName); ?></strong>
+                                            <?php if ($status['exists']): ?>
+                                                <?php if ($status['is_vulnerable']): ?>
+                                                    <span class="badge bg-danger">VULNERABLE</span>
+                                                <?php else: ?>
+                                                    <span class="badge bg-success">SECURE</span>
+                                                <?php endif; ?>
+                                            <?php else: ?>
+                                                <span class="badge bg-secondary">NOT FOUND</span>
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="small text-muted mb-1">
+                                            Permissions: <code><?php echo htmlspecialchars($status['permissions']); ?></code>
+                                            <?php if (!$status['matches_expected']): ?>
+                                                <span class="text-warning">(Expected: <?php echo htmlspecialchars($status['expected_current']); ?>)</span>
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="small text-muted">
+                                            Readable: <i class="bi bi-<?php echo $status['readable'] ? 'check text-success' : 'x text-danger'; ?>"></i>
+                                            | Writable: <i class="bi bi-<?php echo $status['writable'] ? 'check text-success' : 'x text-danger'; ?>"></i>
+                                        </div>
+                                        <?php if ($status['error']): ?>
+                                            <div class="small text-warning mt-1">
+                                                <i class="bi bi-exclamation-triangle"></i> <?php echo htmlspecialchars($status['error']); ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="mt-3">
+                            <a href="test-file-permissions.php" class="btn btn-info btn-sm">
+                                <i class="bi bi-gear"></i> Test File Permissions
+                            </a>
                         </div>
                     </div>
                 </div>

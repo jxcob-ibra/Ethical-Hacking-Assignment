@@ -1,19 +1,10 @@
 2026-06-18 08:20:41 - Enabled weak sudo: student can run ALL commands without password
 2026-06-18 08:20:41 - Enabled weak sudo: student can run ALL commands without password
-2026-06-19 14:43:59 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:43:59 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:43:59 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:44:05 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:44:06 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:44:06 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:44:09 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:44:14 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:44:14 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:46:38 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:46:39 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:47:30 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:47:30 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:50:00 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:50:00 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:50:39 - Disabled weak sudo: student privilege escalation removed
-2026-06-19 14:50:40 - Disabled weak sudo: student privilege escalation removed
+2026-06-19 12:33:43 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 13:34:47 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 14:39:06 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 14:46:18 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 14:46:51 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 14:47:29 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 15:39:31 - Enabled weak sudo: student can run ALL commands without password
+2026-06-19 15:40:52 - Enabled weak sudo: student can run ALL commands without password
