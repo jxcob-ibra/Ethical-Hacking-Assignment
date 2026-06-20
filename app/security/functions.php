@@ -40,6 +40,7 @@ function ensureSecuritySettingsSeeded() {
             'weak_password_hashing' => 'Stores passwords in plaintext instead of using bcrypt hashing.',
             'http_api_communication' => 'Uses HTTP API URL instead of HTTPS for traffic visibility.',
             'weak_file_permissions' => 'Sets sensitive files with overly permissive file permissions (world-readable/writable).',
+            'exposed_database' => 'Exposes MySQL database port and phpMyAdmin to the host machine without authentication.',
         ];
         foreach ($required as $name => $desc) {
             dbExecute(
@@ -57,6 +58,8 @@ function ensureSecuritySettingsSeeded() {
         applyVulnerabilitySideEffects('weak_password_hashing', $weakPassword ? ((int)$weakPassword['enabled'] === 1) : false);
         $weakFilePerms = dbSelectOne("SELECT enabled FROM security_settings WHERE vulnerability_name = 'weak_file_permissions' LIMIT 1");
         applyVulnerabilitySideEffects('weak_file_permissions', $weakFilePerms ? ((int)$weakFilePerms['enabled'] === 1) : false);
+        $exposedDb = dbSelectOne("SELECT enabled FROM security_settings WHERE vulnerability_name = 'exposed_database' LIMIT 1");
+        applyVulnerabilitySideEffects('exposed_database', $exposedDb ? ((int)$exposedDb['enabled'] === 1) : false);
 
         $columns = dbSelect("SHOW COLUMNS FROM users LIKE 'about_me'");
         if (empty($columns)) {
@@ -651,6 +654,8 @@ function applyVulnerabilitySideEffects($name, $enabled)
         syncDatabaseExposure($enabled);
     } elseif ($name === 'weak_file_permissions') {
         syncFilePermissions($enabled);
+    } elseif ($name === 'exposed_database') {
+        syncExposedDatabase($enabled);
     }
 }
 
@@ -1027,6 +1032,88 @@ function getFilePermissionsStatus()
     }
     
     return $status;
+}
+
+function isExposedDatabaseAccessAllowed()
+{
+    $root = dirname(__DIR__, 2);
+    $stateFile = $root . '/storage/exposed_database_state.php';
+    
+    if (file_exists($stateFile)) {
+        include $stateFile;
+        return isset($exposed_database_enabled) && $exposed_database_enabled === true;
+    }
+    
+    // Default to secure (deny access) if file doesn't exist
+    return false;
+}
+
+function syncExposedDatabase($enabled)
+{
+    $root = dirname(__DIR__, 2);
+    $logFile = $root . '/storage/database_exposure.log';
+    $timestamp = date('Y-m-d H:i:s');
+    
+    // Log the toggle action
+    $logMsg = $timestamp . " - Toggle: " . ($enabled ? 'ON' : 'OFF') . " - Exposed Database\n";
+    @file_put_contents($logFile, $logMsg, FILE_APPEND);
+    
+    // Create state file for admin panel to check
+    $stateFile = $root . '/storage/exposed_database_state.php';
+    
+    if ($enabled) {
+        // VULNERABLE MODE: Allow access
+        $logMsg .= $timestamp . " - VULNERABLE MODE: Database connection information shown in admin panel\n";
+        $logMsg .= $timestamp . " - MySQL port 3307 and phpMyAdmin port 8081 are exposed (requires docker-compose restart to change)\n";
+        $logMsg .= $timestamp . " - Note: phpMyAdmin access cannot be dynamically blocked without container restart\n";
+        
+        // Create state file that allows access
+        $stateContent = '<?php
+$exposed_database_enabled = true;
+?>';
+        file_put_contents($stateFile, $stateContent);
+    } else {
+        // SECURE MODE: Block access
+        $logMsg .= $timestamp . " - SECURE MODE: Database connection information hidden in admin panel\n";
+        $logMsg .= $timestamp . " - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)\n";
+        $logMsg .= $timestamp . " - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml\n";
+        
+        // Create state file that denies access
+        $stateContent = '<?php
+$exposed_database_enabled = false;
+?>';
+        file_put_contents($stateFile, $stateContent);
+    }
+    @file_put_contents($logFile, $logMsg, FILE_APPEND);
+    
+    // Log to audit trail (only if user is logged in)
+    try {
+        $userId = getCurrentUserId();
+        $userRole = getCurrentUserRole();
+        if ($userId) {
+            $action = $enabled ? 'ENABLE_EXPOSED_DATABASE' : 'DISABLE_EXPOSED_DATABASE';
+            $ipAddress = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+            $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
+            
+            dbExecute(
+                "INSERT INTO audit_logs (user_id, user_type, action, table_name, record_id, old_values, new_values, ip_address, user_agent) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                [
+                    $userId,
+                    $userRole,
+                    $action,
+                    'security_settings',
+                    null,
+                    json_encode(['mode' => $enabled ? 'SECURE' : 'VULNERABLE']),
+                    json_encode(['mode' => $enabled ? 'VULNERABLE' : 'SECURE', 'note' => 'phpMyAdmin access requires container restart to fully block']),
+                    $ipAddress,
+                    $userAgent
+                ]
+            );
+        }
+    } catch (Exception $e) {
+        // Continue even if audit logging fails
+    }
 }
 
 function getApiBaseUrl()

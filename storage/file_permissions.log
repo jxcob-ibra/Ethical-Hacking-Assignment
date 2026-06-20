@@ -394,3 +394,157 @@
 2026-06-19 15:47:54 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
 2026-06-19 15:47:56 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
 2026-06-19 15:47:56 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:08 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:08 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:29 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:29 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:33 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:33 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:35 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:35 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:35 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:35 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:53 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:53 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:53 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:53 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:53 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:53 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:57 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:52:57 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:53:09 - File: backup.sql - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:53:09 - File: student_records.csv - Mode: VULNERABLE - Target: 666 (world-readable/writable) - Actual: 0666 - Success: YES
+2026-06-20 07:53:09 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 07:53:09 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 07:53:09 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 07:53:09 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 07:53:10 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 07:53:10 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:07:24 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:24 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:24 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:24 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:24 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:41 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:41 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:41 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:41 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:41 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:11:41 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:13:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:13:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:13:20 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 08:13:20 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:22 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:22 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:23 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:23 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:23 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:23 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:25 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:25 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:26 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:26 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:26 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:26 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:29 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:29 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:33 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:33 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:33 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:33 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:34 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:31:34 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:35:27 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:35:27 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:35:28 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:35:28 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:35:28 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:35:28 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:36:27 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:36:27 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:36:28 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:36:28 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:36:28 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:36:28 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:37:52 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:37:52 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:46:32 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:46:32 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:46:32 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:46:32 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:46:33 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 09:46:33 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:04:52 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:04:52 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:04:52 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:04:52 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:04:53 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:04:53 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:21:39 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:21:39 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:21:40 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:21:40 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:21:40 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:21:40 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:23:07 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:23:07 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:23:07 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:23:07 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:23:08 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:23:08 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:24:13 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:24:13 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:07 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:07 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:16 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:16 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:22 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:22 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:25 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:25 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:28 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:25:28 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:08 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:08 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:09 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:09 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:10 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:10 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:11 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:11 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:12 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:12 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:13 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:13 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:15 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:32:15 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:35:46 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:35:46 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:36:54 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:36:54 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:37:28 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:37:28 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:37:35 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:37:35 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:37:58 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:37:58 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:38:06 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:38:06 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:42:19 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:42:19 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:43:45 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:43:45 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:44:04 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:44:04 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:44:08 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:44:08 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:44:14 - File: backup.sql - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES
+2026-06-20 10:44:14 - File: student_records.csv - Mode: SECURE - Target: 640 (owner rw, group r, others none) - Actual: 0640 - Success: YES

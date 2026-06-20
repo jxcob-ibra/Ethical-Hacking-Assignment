@@ -125,23 +125,27 @@ $auditLogs = dbSelect($query, $params);
                 <div class="card mb-4">
                     <div class="card-body">
                         <form method="GET" action="">
-                            <div class="row g-3">
-                                <div class="col-md-5">
-                                    <label class="form-label">Action</label>
-                                    <input type="text" class="form-control" name="action" placeholder="Search action..." 
-                                           value="<?php echo htmlspecialchars($actionFilter); ?>">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text">Action</span>
+                                        <input type="text" class="form-control" name="action" placeholder="Search action..." 
+                                               value="<?php echo htmlspecialchars($actionFilter); ?>">
+                                    </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <label class="form-label">Table</label>
-                                    <select class="form-select" name="table">
-                                        <option value="">All Tables</option>
-                                        <option value="users" <?php echo $tableFilter === 'users' ? 'selected' : ''; ?>>Users</option>
-                                        <option value="courses" <?php echo $tableFilter === 'courses' ? 'selected' : ''; ?>>Courses</option>
-                                        <option value="enrollments" <?php echo $tableFilter === 'enrollments' ? 'selected' : ''; ?>>Enrollments</option>
-                                        <option value="payments" <?php echo $tableFilter === 'payments' ? 'selected' : ''; ?>>Payments</option>
-                                    </select>
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text">Table</span>
+                                        <select class="form-select" name="table">
+                                            <option value="">All Tables</option>
+                                            <option value="users" <?php echo $tableFilter === 'users' ? 'selected' : ''; ?>>Users</option>
+                                            <option value="courses" <?php echo $tableFilter === 'courses' ? 'selected' : ''; ?>>Courses</option>
+                                            <option value="enrollments" <?php echo $tableFilter === 'enrollments' ? 'selected' : ''; ?>>Enrollments</option>
+                                            <option value="payments" <?php echo $tableFilter === 'payments' ? 'selected' : ''; ?>>Payments</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="col-md-2 d-flex align-items-end">
+                                <div class="col-md-4">
                                     <button type="submit" class="btn btn-primary w-100">Filter</button>
                                 </div>
                             </div>
@@ -154,28 +158,44 @@ $auditLogs = dbSelect($query, $params);
                     <div class="card-body">
                         <?php if (!empty($auditLogs)): ?>
                             <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
+                                <table class="table table-hover table-striped">
+                                    <thead class="table-dark">
                                         <tr>
-                                            <th>ID</th>
-                                            <th>Action</th>
-                                            <th>User Type</th>
-                                            <th>Table</th>
-                                            <th>Record ID</th>
-                                            <th>IP Address</th>
-                                            <th>Date</th>
+                                            <th style="width: 5%;" class="text-center">ID</th>
+                                            <th style="width: 25%;">Action</th>
+                                            <th style="width: 8%;">User Type</th>
+                                            <th style="width: 10%;">Table</th>
+                                            <th style="width: 15%;" class="text-center">Record ID</th>
+                                            <th style="width: 10%;">IP Address</th>
+                                            <th style="width: 10%;">Date</th>
+                                            <th style="width: 20%;">Details</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php foreach ($auditLogs as $log): ?>
                                             <tr>
-                                                <td><?php echo $log['log_id']; ?></td>
+                                                <td class="text-center"><?php echo $log['log_id']; ?></td>
                                                 <td><strong><?php echo htmlspecialchars($log['action']); ?></strong></td>
-                                                <td><?php echo htmlspecialchars($log['user_type'] ?? 'System'); ?></td>
-                                                <td><?php echo htmlspecialchars($log['table_name'] ?? 'N/A'); ?></td>
-                                                <td><?php echo $log['record_id'] ?? 'N/A'; ?></td>
-                                                <td><?php echo htmlspecialchars($log['ip_address'] ?? 'N/A'); ?></td>
+                                                <td><span class="badge bg-secondary"><?php echo htmlspecialchars($log['user_type'] ?? 'System'); ?></span></td>
+                                                <td><span class="badge bg-info"><?php echo htmlspecialchars($log['table_name'] ?? 'N/A'); ?></span></td>
+                                                <td class="text-center"><?php echo $log['record_id'] ?? 'N/A'; ?></td>
+                                                <td><code><?php echo htmlspecialchars($log['ip_address'] ?? 'N/A'); ?></code></td>
                                                 <td><?php echo formatDate($log['created_at']); ?></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#details-<?php echo $log['log_id']; ?>">
+                                                        <i class="bi bi-eye"></i> View
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="collapse" id="details-<?php echo $log['log_id']; ?>">
+                                                <td colspan="8" class="bg-light">
+                                                    <div class="p-3">
+                                                        <h6 class="fw-bold mb-2">Old Values:</h6>
+                                                        <pre class="bg-white p-2 rounded border" style="max-height: 200px; overflow-y: auto; font-size: 0.85rem;"><?php echo htmlspecialchars($log['old_values'] ?? 'N/A'); ?></pre>
+                                                        <h6 class="fw-bold mb-2 mt-3">New Values:</h6>
+                                                        <pre class="bg-white p-2 rounded border" style="max-height: 200px; overflow-y: auto; font-size: 0.85rem;"><?php echo htmlspecialchars($log['new_values'] ?? 'N/A'); ?></pre>
+                                                    </div>
+                                                </td>
                                             </tr>
                                         <?php endforeach; ?>
                                     </tbody>

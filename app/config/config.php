@@ -45,6 +45,7 @@ define('IDOR_ENABLED', filter_var($_ENV['IDOR_ENABLED'] ?? 'true', FILTER_VALIDA
 define('UPLOAD_ENABLED', filter_var($_ENV['UPLOAD_ENABLED'] ?? 'true', FILTER_VALIDATE_BOOLEAN));
 define('WEAK_AUTH_ENABLED', filter_var($_ENV['WEAK_AUTH_ENABLED'] ?? 'true', FILTER_VALIDATE_BOOLEAN));
 define('CSRF_ENABLED', filter_var($_ENV['CSRF_ENABLED'] ?? 'true', FILTER_VALIDATE_BOOLEAN));
+define('EXPOSED_DATABASE_ENABLED', filter_var($_ENV['EXPOSED_DATABASE_ENABLED'] ?? 'false', FILTER_VALIDATE_BOOLEAN));
 
 // File Upload Configuration
 define('UPLOAD_DIR', $_ENV['UPLOAD_DIR'] ?? __DIR__ . '/../uploads/');

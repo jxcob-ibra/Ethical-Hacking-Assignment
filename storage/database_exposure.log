@@ -1,0 +1,372 @@
+2026-06-20 07:52:08 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:08 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:08 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:08 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:29 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:29 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:29 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:29 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:33 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:33 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:33 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:33 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:35 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:35 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:35 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:35 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:35 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:35 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:35 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:35 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:53 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:53 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:53 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:53 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:53 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:53 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:53 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:53 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:53 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:53 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:53 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:53 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:52:57 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:57 - Toggle: OFF - Exposed Database
+2026-06-20 07:52:57 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:52:57 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:53:09 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:09 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:09 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:53:09 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:53:09 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:09 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:09 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:53:09 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:53:09 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:09 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:09 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:53:09 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 07:53:10 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:10 - Toggle: OFF - Exposed Database
+2026-06-20 07:53:10 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 07:53:10 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 08:07:24 - Toggle: OFF - Exposed Database
+2026-06-20 08:07:24 - Toggle: OFF - Exposed Database
+2026-06-20 08:07:24 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 08:07:24 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 08:07:24 - Toggle: ON - Exposed Database
+2026-06-20 08:07:24 - Toggle: ON - Exposed Database
+2026-06-20 08:07:24 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 08:07:24 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 08:07:24 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 08:07:24 - Toggle: ON - Exposed Database
+2026-06-20 08:07:24 - Toggle: ON - Exposed Database
+2026-06-20 08:07:24 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 08:07:24 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 08:07:24 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 08:07:24 - Toggle: ON - Exposed Database
+2026-06-20 08:07:24 - Toggle: ON - Exposed Database
+2026-06-20 08:07:24 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 08:07:24 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 08:07:24 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 08:11:24 - Toggle: ON - Exposed Database
+2026-06-20 08:11:24 - Toggle: ON - Exposed Database
+2026-06-20 08:11:24 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 08:11:24 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 08:11:24 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 08:11:24 - Toggle: ON - Exposed Database
+2026-06-20 08:11:24 - Toggle: ON - Exposed Database
+2026-06-20 08:11:24 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 08:11:24 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 08:11:24 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 08:11:41 - Toggle: ON - Exposed Database
+2026-06-20 08:11:41 - Toggle: ON - Exposed Database
+2026-06-20 08:11:41 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 08:11:41 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 08:11:41 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 08:11:41 - Toggle: OFF - Exposed Database
+2026-06-20 08:11:41 - Toggle: OFF - Exposed Database
+2026-06-20 08:11:41 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 08:11:41 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 08:11:41 - Toggle: OFF - Exposed Database
+2026-06-20 08:11:41 - Toggle: OFF - Exposed Database
+2026-06-20 08:11:41 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 08:11:41 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 08:13:20 - Toggle: OFF - Exposed Database
+2026-06-20 08:13:20 - Toggle: OFF - Exposed Database
+2026-06-20 08:13:20 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 08:13:20 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 08:13:20 - Toggle: OFF - Exposed Database
+2026-06-20 08:13:20 - Toggle: OFF - Exposed Database
+2026-06-20 08:13:20 - SECURE MODE: Database should be isolated (requires docker-compose restart in real scenario)
+2026-06-20 08:13:20 - Note: For this lab, ports remain exposed but vulnerability is marked as disabled
+2026-06-20 09:31:22 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:22 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:22 - SECURE MODE: Database access blocked
+2026-06-20 09:31:22 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:22 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:23 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:23 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:23 - SECURE MODE: Database access blocked
+2026-06-20 09:31:23 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:23 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:23 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:23 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:23 - SECURE MODE: Database access blocked
+2026-06-20 09:31:23 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:23 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:25 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:25 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:25 - SECURE MODE: Database access blocked
+2026-06-20 09:31:25 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:25 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:26 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:26 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:26 - SECURE MODE: Database access blocked
+2026-06-20 09:31:26 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:26 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:26 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:26 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:26 - SECURE MODE: Database access blocked
+2026-06-20 09:31:26 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:26 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:29 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:29 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:29 - SECURE MODE: Database access blocked
+2026-06-20 09:31:29 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:29 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:33 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:33 - Toggle: OFF - Exposed Database
+2026-06-20 09:31:33 - SECURE MODE: Database access blocked
+2026-06-20 09:31:33 - phpMyAdmin access denied via configuration
+2026-06-20 09:31:33 - Note: iptables rules applied (if applicable)
+2026-06-20 09:31:33 - Toggle: ON - Exposed Database
+2026-06-20 09:31:33 - Toggle: ON - Exposed Database
+2026-06-20 09:31:33 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 09:31:33 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 09:31:33 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 09:31:33 - Note: iptables rules removed (if applicable)
+2026-06-20 09:31:34 - Toggle: ON - Exposed Database
+2026-06-20 09:31:34 - Toggle: ON - Exposed Database
+2026-06-20 09:31:34 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 09:31:34 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 09:31:34 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 09:31:34 - Note: iptables rules removed (if applicable)
+2026-06-20 09:35:28 - Toggle: ON - Exposed Database
+2026-06-20 09:35:28 - Toggle: ON - Exposed Database
+2026-06-20 09:35:28 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 09:35:28 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 09:35:28 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 09:35:28 - Note: iptables rules removed (if applicable)
+2026-06-20 09:35:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:35:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:35:28 - SECURE MODE: Database access blocked
+2026-06-20 09:35:28 - phpMyAdmin access denied via configuration
+2026-06-20 09:35:28 - Note: iptables rules applied (if applicable)
+2026-06-20 09:35:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:35:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:35:28 - SECURE MODE: Database access blocked
+2026-06-20 09:35:28 - phpMyAdmin access denied via configuration
+2026-06-20 09:35:28 - Note: iptables rules applied (if applicable)
+2026-06-20 09:36:27 - Toggle: OFF - Exposed Database
+2026-06-20 09:36:27 - Toggle: OFF - Exposed Database
+2026-06-20 09:36:27 - SECURE MODE: Database access blocked
+2026-06-20 09:36:27 - phpMyAdmin access denied via configuration
+2026-06-20 09:36:27 - Note: iptables rules applied (if applicable)
+2026-06-20 09:36:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:36:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:36:28 - SECURE MODE: Database access blocked
+2026-06-20 09:36:28 - phpMyAdmin access denied via configuration
+2026-06-20 09:36:28 - Note: iptables rules applied (if applicable)
+2026-06-20 09:36:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:36:28 - Toggle: OFF - Exposed Database
+2026-06-20 09:36:28 - SECURE MODE: Database access blocked
+2026-06-20 09:36:28 - phpMyAdmin access denied via configuration
+2026-06-20 09:36:28 - Note: iptables rules applied (if applicable)
+2026-06-20 09:37:52 - Toggle: OFF - Exposed Database
+2026-06-20 09:37:52 - Toggle: OFF - Exposed Database
+2026-06-20 09:37:52 - SECURE MODE: Database access blocked
+2026-06-20 09:37:52 - phpMyAdmin access denied via configuration
+2026-06-20 09:37:52 - Note: iptables rules applied (if applicable)
+2026-06-20 09:46:32 - Toggle: OFF - Exposed Database
+2026-06-20 09:46:32 - Toggle: OFF - Exposed Database
+2026-06-20 09:46:32 - SECURE MODE: Database access blocked
+2026-06-20 09:46:32 - phpMyAdmin access denied via configuration
+2026-06-20 09:46:32 - Note: iptables rules applied (if applicable)
+2026-06-20 09:46:33 - Toggle: ON - Exposed Database
+2026-06-20 09:46:33 - Toggle: ON - Exposed Database
+2026-06-20 09:46:33 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 09:46:33 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 09:46:33 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 09:46:33 - Note: iptables rules removed (if applicable)
+2026-06-20 09:46:33 - Toggle: ON - Exposed Database
+2026-06-20 09:46:33 - Toggle: ON - Exposed Database
+2026-06-20 09:46:33 - VULNERABLE MODE: MySQL port 3307 and phpMyAdmin port 8081 are exposed
+2026-06-20 09:46:33 - Students can connect directly to: mysql -h 127.0.0.1 -P 3307 -u root -prootpassword
+2026-06-20 09:46:33 - Students can access phpMyAdmin at: http://localhost:8081
+2026-06-20 09:46:33 - Note: iptables rules removed (if applicable)
+2026-06-20 10:04:52 - Toggle: ON - Exposed Database
+2026-06-20 10:04:52 - Toggle: ON - Exposed Database
+2026-06-20 10:04:52 - VULNERABLE MODE: Database connection information shown in admin panel
+2026-06-20 10:04:52 - MySQL port 3307 and phpMyAdmin port 8081 are exposed (requires docker-compose restart to change)
+2026-06-20 10:04:52 - Note: phpMyAdmin access cannot be dynamically blocked without container restart
+2026-06-20 10:04:52 - Toggle: OFF - Exposed Database
+2026-06-20 10:04:52 - Toggle: OFF - Exposed Database
+2026-06-20 10:04:52 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:04:52 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:04:52 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:04:53 - Toggle: OFF - Exposed Database
+2026-06-20 10:04:53 - Toggle: OFF - Exposed Database
+2026-06-20 10:04:53 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:04:53 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:04:53 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:21:40 - Toggle: OFF - Exposed Database
+2026-06-20 10:21:40 - Toggle: OFF - Exposed Database
+2026-06-20 10:21:40 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:21:40 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:21:40 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:21:40 - Toggle: ON - Exposed Database
+2026-06-20 10:21:40 - Toggle: ON - Exposed Database
+2026-06-20 10:21:40 - VULNERABLE MODE: Database connection information shown in admin panel
+2026-06-20 10:21:40 - MySQL port 3307 and phpMyAdmin port 8081 are exposed (requires docker-compose restart to change)
+2026-06-20 10:21:40 - Note: phpMyAdmin access cannot be dynamically blocked without container restart
+2026-06-20 10:21:40 - Toggle: ON - Exposed Database
+2026-06-20 10:21:40 - Toggle: ON - Exposed Database
+2026-06-20 10:21:40 - VULNERABLE MODE: Database connection information shown in admin panel
+2026-06-20 10:21:40 - MySQL port 3307 and phpMyAdmin port 8081 are exposed (requires docker-compose restart to change)
+2026-06-20 10:21:40 - Note: phpMyAdmin access cannot be dynamically blocked without container restart
+2026-06-20 10:23:07 - Toggle: ON - Exposed Database
+2026-06-20 10:23:07 - Toggle: ON - Exposed Database
+2026-06-20 10:23:07 - VULNERABLE MODE: Database connection information shown in admin panel
+2026-06-20 10:23:07 - MySQL port 3307 and phpMyAdmin port 8081 are exposed (requires docker-compose restart to change)
+2026-06-20 10:23:07 - Note: phpMyAdmin access cannot be dynamically blocked without container restart
+2026-06-20 10:23:08 - Toggle: OFF - Exposed Database
+2026-06-20 10:23:08 - Toggle: OFF - Exposed Database
+2026-06-20 10:23:08 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:23:08 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:23:08 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:23:08 - Toggle: OFF - Exposed Database
+2026-06-20 10:23:08 - Toggle: OFF - Exposed Database
+2026-06-20 10:23:08 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:23:08 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:23:08 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:24:13 - Toggle: OFF - Exposed Database
+2026-06-20 10:24:13 - Toggle: OFF - Exposed Database
+2026-06-20 10:24:13 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:24:13 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:24:13 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:25:07 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:07 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:07 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:25:07 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:25:07 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:25:16 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:16 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:16 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:25:16 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:25:16 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:25:22 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:22 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:22 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:25:22 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:25:22 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:25:25 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:25 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:25 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:25:25 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:25:25 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:25:29 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:29 - Toggle: OFF - Exposed Database
+2026-06-20 10:25:29 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:25:29 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:25:29 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:09 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:09 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:09 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:09 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:09 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:09 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:09 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:09 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:09 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:09 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:10 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:10 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:10 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:10 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:10 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:12 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:12 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:12 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:12 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:12 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:12 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:12 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:12 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:12 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:12 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:13 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:13 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:13 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:13 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:13 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:32:15 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:15 - Toggle: OFF - Exposed Database
+2026-06-20 10:32:15 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:32:15 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:32:15 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:35:46 - Toggle: OFF - Exposed Database
+2026-06-20 10:35:46 - Toggle: OFF - Exposed Database
+2026-06-20 10:35:46 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:35:46 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:35:46 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:36:54 - Toggle: OFF - Exposed Database
+2026-06-20 10:36:54 - Toggle: OFF - Exposed Database
+2026-06-20 10:36:54 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:36:54 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:36:54 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:37:28 - Toggle: OFF - Exposed Database
+2026-06-20 10:37:28 - Toggle: OFF - Exposed Database
+2026-06-20 10:37:28 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:37:28 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:37:28 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:37:35 - Toggle: OFF - Exposed Database
+2026-06-20 10:37:35 - Toggle: OFF - Exposed Database
+2026-06-20 10:37:35 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:37:35 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:37:35 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:37:58 - Toggle: OFF - Exposed Database
+2026-06-20 10:37:58 - Toggle: OFF - Exposed Database
+2026-06-20 10:37:58 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:37:58 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:37:58 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:38:06 - Toggle: OFF - Exposed Database
+2026-06-20 10:38:06 - Toggle: OFF - Exposed Database
+2026-06-20 10:38:06 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:38:06 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:38:06 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:42:19 - Toggle: OFF - Exposed Database
+2026-06-20 10:42:19 - Toggle: OFF - Exposed Database
+2026-06-20 10:42:19 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:42:19 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:42:19 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:43:45 - Toggle: OFF - Exposed Database
+2026-06-20 10:43:45 - Toggle: OFF - Exposed Database
+2026-06-20 10:43:45 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:43:45 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:43:45 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:44:04 - Toggle: OFF - Exposed Database
+2026-06-20 10:44:04 - Toggle: OFF - Exposed Database
+2026-06-20 10:44:04 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:44:04 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:44:04 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:44:08 - Toggle: OFF - Exposed Database
+2026-06-20 10:44:08 - Toggle: OFF - Exposed Database
+2026-06-20 10:44:08 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:44:08 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:44:08 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml
+2026-06-20 10:44:14 - Toggle: OFF - Exposed Database
+2026-06-20 10:44:14 - Toggle: OFF - Exposed Database
+2026-06-20 10:44:14 - SECURE MODE: Database connection information hidden in admin panel
+2026-06-20 10:44:14 - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)
+2026-06-20 10:44:14 - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml

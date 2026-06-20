@@ -50,3 +50,388 @@
 [+] Applied strong password to local SSH account: student
 [+] Strong credential profile applied
 [+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:08 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:08 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:29 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:29 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:33 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:33 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:34 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:34 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:35 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:35 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:53 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:53 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:53 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:53 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:53 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:53 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:52:57 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:52:57 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:53:09 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:53:09 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:53:09 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:53:09 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:53:09 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:53:09 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 07:53:09 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 07:53:10 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:07:24 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:07:24 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:07:24 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:07:24 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:07:24 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:07:24 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:07:24 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:07:24 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:11:23 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:11:24 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:11:24 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:11:24 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:11:41 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:11:41 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:11:41 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:11:41 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:11:41 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:11:41 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:13:20 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:13:20 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 08:13:20 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 08:13:20 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:22 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:22 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:22 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:22 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:23 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:23 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:25 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:25 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:26 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:26 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:26 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:26 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:29 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:29 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:33 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:33 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:33 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:33 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:31:34 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:31:34 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:35:27 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:35:27 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:35:28 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:35:28 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:35:28 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:35:28 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:36:27 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:36:27 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:36:27 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:36:27 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:36:28 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:36:28 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:37:51 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:37:52 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:46:32 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:46:32 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:46:32 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:46:32 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 09:46:33 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 09:46:33 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:04:52 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:04:52 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:04:52 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:04:52 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:04:52 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:04:53 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:21:39 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:21:39 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:21:40 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:21:40 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:21:40 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:21:40 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:23:07 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:23:07 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:23:07 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:23:07 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:23:08 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:23:08 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:24:13 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:24:13 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:25:07 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:25:07 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:25:16 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:25:16 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:25:22 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:25:22 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:25:25 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:25:25 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:25:28 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:25:28 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:08 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:08 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:09 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:09 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:09 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:09 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:11 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:11 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:12 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:12 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:12 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:12 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:32:14 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:32:14 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:35:46 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:35:46 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:36:54 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:36:54 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:37:28 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:37:28 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:37:34 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:37:35 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:37:58 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:37:58 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:38:06 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:38:06 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:42:19 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:42:19 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:43:45 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:43:45 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:44:04 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:44:04 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:44:08 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:44:08 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt
+2026-06-20 10:44:14 - Toggle: OFF - Script: /var/www/html/scripts/disable_weak_ssh.sh
+2026-06-20 10:44:14 - Return: 0 - Output: [*] Disabling weak SSH credentials (secure mode)
+[+] Applied strong password to local SSH account: student
+[+] Strong credential profile applied
+[+] File: storage/ssh/credentials.txt

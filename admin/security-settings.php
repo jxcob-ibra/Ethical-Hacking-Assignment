@@ -6,6 +6,9 @@ require_once '../app/security/auth.php';
 requireRole('admin');
 checkSessionTimeout();
 
+// Check if exposed_database is enabled
+$exposedDbEnabled = isVulnerabilityEnabled('exposed_database');
+
 $definitions = [
     'sql_injection' => 'SQL Injection',
     'stored_xss' => 'Stored XSS',
@@ -15,6 +18,7 @@ $definitions = [
     'weak_password_hashing' => 'Weak Password Hashing',
     'http_api_communication' => 'HTTP API Communication',
     'weak_file_permissions' => 'Weak File Permissions',
+    'exposed_database' => 'Exposed Database',
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -192,12 +196,34 @@ foreach ($settings as $row) {
                                     <code class="flex-grow-1"><?php echo APP_URL; ?>/backups/backup.sql</code>
                                 </div>
                             </div>
+                            <?php if ($exposedDbEnabled): ?>
                             <div class="col-md-12">
                                 <div class="d-flex">
                                     <strong class="me-2" style="min-width: 200px;">Database Exposure URL (enabled mode):</strong>
                                     <code class="flex-grow-1"><?php echo APP_URL; ?>/admin/user-database-exposure.php</code>
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="d-flex">
+                                    <strong class="me-2" style="min-width: 200px;">MySQL Connection (enabled mode):</strong>
+                                    <span class="flex-grow-1">
+                                        <code>mysql -h 127.0.0.1 -P 3307 -u root -prootpassword</code>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="d-flex">
+                                    <strong class="me-2" style="min-width: 200px;">phpMyAdmin (enabled mode):</strong>
+                                    <code class="flex-grow-1">http://localhost:8081</code>
+                                </div>
+                            </div>
+                            <?php else: ?>
+                            <div class="col-md-12">
+                                <div class="alert alert-info">
+                                    <strong>Database Access Disabled:</strong> MySQL and phpMyAdmin access information is hidden in Secure Mode.
+                                </div>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>

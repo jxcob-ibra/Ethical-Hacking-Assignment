@@ -396,4 +396,5 @@ INSERT INTO security_settings (vulnerability_name, description, enabled) VALUES
 ('weak_ssh_credentials', 'Uses predictable SSH credentials for demonstration.', 0),
 ('backup_file_exposure', 'Exposes database backup file from web-accessible path.', 0),
 ('weak_password_hashing', 'Stores passwords in plaintext instead of using bcrypt hashing.', 0),
-('http_api_communication', 'Uses HTTP API URL instead of HTTPS for traffic visibility.', 0);
+('http_api_communication', 'Uses HTTP API URL instead of HTTPS for traffic visibility.', 0),
+('exposed_database', 'Exposes MySQL database port and phpMyAdmin to the host machine without authentication.', 0);
