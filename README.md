@@ -60,11 +60,11 @@ docker exec -it ethical-hacking--master-mysql-1 mysql -u root -prootpassword mye
 
 ## Demo Accounts
 
-| Role    | Email                    | Password    |
-|---------|--------------------------|-------------|
-| Admin   | admin@myeduconnect.com   | Admin123!   |
-| Teacher | teacher@myeduconnect.com | Teacher123! |
-| Student | student@myeduconnect.com | Student123! |
+| Role    | Email                     | Password |
+|---------|---------------------------|----------|
+| Admin   | admin@myeduconnect.com    | password |
+| Teacher | teacher1@myeduconnect.com | password |
+| Student | student1@myeduconnect.com | password |
 
 ## Security Control Panel
 

@@ -437,3 +437,21 @@ sudo: a password is required
 2026-06-22 11:30:20 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
 2026-06-22 11:30:20 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
 sudo: a password is required
+2026-06-22 11:36:44 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:36:44 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:36:44 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:36:44 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:38:08 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:38:08 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:38:08 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:38:08 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:38:16 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:38:16 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:38:16 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:38:16 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
