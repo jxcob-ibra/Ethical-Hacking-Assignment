@@ -40,15 +40,21 @@ mkdir -p "$ROOT/storage/ssh"
 printf 'student:%s\n' "$WEAK_PASS" > "$CRED_FILE"
 
 if command -v chpasswd >/dev/null 2>&1 && id student >/dev/null 2>&1; then
-    printf 'student:%s\n' "$WEAK_PASS | chpasswd -c SHA512
+    echo "student:$WEAK_PASS" | chpasswd
     echo "[+] Applied weak password to local SSH account: student"
+    # Force SSH daemon to reload configuration
+    pkill -HUP sshd || service ssh restart || service sshd restart || true
+    sleep 1
+    echo "[+] SSH daemon reloaded"
+else
+    echo "[!] chpasswd or student user not available, only updating credential file"
 fi
 
 echo "[+] Weak credentials set to student/$WEAK_PASS"
 echo "[+] File: storage/ssh/credentials.txt"
 echo "[+] SSH endpoint (if enabled): localhost:2222"
 ```
-Sets SSH password to "password123" for the student user.
+Sets SSH password to "password123" for the student user and forces SSH daemon reload to apply changes immediately.
 
 **Docker Configuration (docker/Dockerfile, lines 45-51)**:
 ```dockerfile
@@ -73,19 +79,25 @@ ROOT="$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)"
 CRED_FILE="$ROOT/storage/ssh/credentials.txt"
 STRONG_PASS="Str0ng!Lab#Pass_2026"
 
-echo "[*] Disabling weak SSH credentials (restoring secure mode)"
+echo "[*] Disabling weak SSH credentials (secure mode)"
 mkdir -p "$ROOT/storage/ssh"
 printf 'student:%s\n' "$STRONG_PASS" > "$CRED_FILE"
 
 if command -v chpasswd >/dev/null 2>&1 && id student >/dev/null 2>&1; then
-    printf 'student:%s\n' "$STRONG_PASS | chpasswd -c SHA512
-    echo "[+] Restored strong password to local SSH account: student"
+    echo "student:$STRONG_PASS" | chpasswd
+    echo "[+] Applied strong password to local SSH account: student"
+    # Force SSH daemon to reload configuration
+    pkill -HUP sshd || service ssh restart || service sshd restart || true
+    sleep 1
+    echo "[+] SSH daemon reloaded"
+else
+    echo "[!] chpasswd or student user not available, only updating credential file"
 fi
 
-echo "[+] Secure credentials restored to student/$STRONG_PASS"
+echo "[+] Strong credential profile applied"
 echo "[+] File: storage/ssh/credentials.txt"
 ```
-Restores SSH password to "Str0ng!Lab#Pass_2026" for the student user.
+Restores SSH password to "Str0ng!Lab#Pass_2026" for the student user and forces SSH daemon reload to apply changes immediately.
 
 **Side Effect Function (app/security/functions.php, lines 699-716)**:
 ```php
@@ -106,46 +118,158 @@ Executes the appropriate script based on toggle state.
 
 ## Testing Procedures
 
-### Test 1: SSH Login with Weak Credentials
+### IMPORTANT: Setup Steps Before Testing
+
+**Step 1: Make scripts executable inside Docker container**
+```bash
+docker exec myeduconnect-web chmod +x /var/www/html/scripts/enable_weak_ssh.sh
+docker exec myeduconnect-web chmod +x /var/www/html/scripts/disable_weak_ssh.sh
+```
+
+**Step 2: Rebuild the Docker container** (required after script changes)
+```bash
+docker-compose down
+docker-compose up -d --build
+```
+
+**Step 3: Verify container is running**
+```bash
+docker-compose ps
+```
+Ensure the `web` container shows status as "Up".
+
+**Step 4: Verify SSH service is running**
+```bash
+docker exec myeduconnect-web service ssh status
+```
+If not running, start it:
+```bash
+docker exec myeduconnect-web service ssh start
+```
+
+### Test 1: SSH Login with Weak Credentials (Vulnerable Mode)
 **Prerequisites**: Weak SSH Credentials CHECKED (vulnerable mode), Docker container running
 
-1. Ensure Docker container is running: `docker-compose up -d`
-2. Access SSH via port 2222 (mapped in docker-compose.yml)
-3. Attempt SSH login: `ssh -p 2222 student@localhost`
-4. Enter password: `password123`
-5. **Expected Vulnerable Result**: Successful SSH login with weak password
-6. **Expected Secure Result**: Login denied (password incorrect)
+1. Navigate to `/admin/security-settings.php`
+2. Check the "Weak SSH Credentials" checkbox
+3. Click "Save Security Settings"
+4. Wait 2-3 seconds for the script to execute
+5. Verify the script ran successfully by checking the log: `docker exec myeduconnect-web cat /var/www/html/storage/ssh_toggle.log`
+6. Attempt SSH login: `ssh -p 2222 student@localhost`
+7. When prompted for password, enter: `password123`
+8. **Expected Result**: Successful SSH login with weak password
+9. **If login fails**: Check the SSH toggle log for errors
 
-### Test 2: SSH Login with Strong Credentials
+### Test 2: SSH Login with Strong Credentials (Secure Mode)
 **Prerequisites**: Weak SSH Credentials UNCHECKED (secure mode), Docker container running
 
-1. Ensure Docker container is running
-2. Access SSH via port 2222
-3. Attempt SSH login: `ssh -p 2222 student@localhost`
-4. Enter password: `Str0ng!Lab#Pass_2026`
-5. **Expected Result**: Successful SSH login with strong password
-6. Try weak password: `password123`
-7. **Expected Result**: Login denied
+1. Navigate to `/admin/security-settings.php`
+2. Uncheck the "Weak SSH Credentials" checkbox
+3. Click "Save Security Settings"
+4. Wait 2-3 seconds for the script to execute
+5. Verify the script ran successfully by checking the log: `docker exec myeduconnect-web cat /var/www/html/storage/ssh_toggle.log`
+6. Attempt SSH login: `ssh -p 2222 student@localhost`
+7. When prompted for password, enter: `Str0ng!Lab#Pass_2026`
+8. **Expected Result**: Successful SSH login with strong password
+9. Try weak password: `password123`
+10. **Expected Result**: Login denied (Permission denied)
 
 ### Test 3: Credential File Verification
 **Prerequisites**: Any toggle state
 
-1. Check credential file: `cat storage/ssh/credentials.txt`
+1. Check credential file inside container: `docker exec myeduconnect-web cat /var/www/html/storage/ssh/credentials.txt`
 2. **Expected Vulnerable Mode**: Shows `student:password123`
 3. **Expected Secure Mode**: Shows `student:Str0ng!Lab#Pass_2026`
 
-### Test 4: Toggle Verification via Security Settings
+### Test 4: Direct Script Execution (Debug Mode)
 **Prerequisites**: Docker container running
 
-1. Navigate to `/admin/security-settings.php`
-2. Check "Weak SSH Credentials"
-3. Click "Save Security Settings"
-4. Check `storage/ssh/credentials.txt` file
-5. **Expected Result**: Password changed to `password123`
-6. Uncheck "Weak SSH Credentials"
-7. Click "Save Security Settings"
-8. Check `storage/ssh/credentials.txt` file
-9. **Expected Result**: Password changed to `Str0ng!Lab#Pass_2026`
+If the toggle isn't working, execute the script directly inside the container:
+
+**To enable weak credentials:**
+```bash
+docker exec myeduconnect-web sudo sh /var/www/html/scripts/enable_weak_ssh.sh
+```
+
+**To disable weak credentials (restore strong):**
+```bash
+docker exec myeduconnect-web sudo sh /var/www/html/scripts/disable_weak_ssh.sh
+```
+
+Then test SSH login immediately after.
+
+### Test 5: Verify SSH Service Status
+**Prerequisites**: Docker container running
+
+1. Check if SSH service is running: `docker exec myeduconnect-web service ssh status` or `docker exec myeduconnect-web service sshd status`
+2. **Expected Result**: SSH service should be running
+3. If not running, start it: `docker exec myeduconnect-web service ssh start`
+
+## Troubleshooting
+
+### Issue: SSH login fails even after toggling vulnerability
+
+**Solution 1: Check script execution logs**
+```bash
+docker exec myeduconnect-web cat /var/www/html/storage/ssh_toggle.log
+```
+Look for errors in the output. Common errors include:
+- "Script not found" - scripts need to be made executable
+- "Permission denied" - sudo access issue
+- "chpasswd: command not found" - chpasswd not installed in container
+
+**Solution 2: Execute script directly**
+If the toggle isn't working, execute the script directly inside the container:
+```bash
+# To enable weak credentials
+docker exec myeduconnect-web sudo sh /var/www/html/scripts/enable_weak_ssh.sh
+
+# To disable weak credentials
+docker exec myeduconnect-web sudo sh /var/www/html/scripts/disable_weak_ssh.sh
+```
+
+**Solution 3: Verify password was actually changed**
+```bash
+docker exec myeduconnect-web cat /var/www/html/storage/ssh/credentials.txt
+```
+This should show the current password setting.
+
+**Solution 4: Check if student user exists**
+```bash
+docker exec myeduconnect-web id student
+```
+If the user doesn't exist, you may need to recreate the container:
+```bash
+docker-compose down
+docker-compose up -d --build
+```
+
+**Solution 5: Manually set password (emergency fix)**
+⚠️ **WARNING**: This is a temporary fix that overrides the toggle. After testing, you must reset the password or the toggle will not work correctly.
+
+If scripts aren't working, manually set the password:
+```bash
+# For weak password (vulnerable mode) - TESTING ONLY
+docker exec myeduconnect-web bash -c "echo 'student:password123' | chpasswd"
+docker exec myeduconnect-web pkill -HUP sshd
+
+# After testing, RESET to strong password so toggle works again:
+docker exec myeduconnect-web bash -c "echo 'student:Str0ng!Lab#Pass_2026' | chpasswd"
+docker exec myeduconnect-web pkill -HUP sshd
+```
+
+**IMPORTANT**: After using the emergency fix, the toggle mechanism will be broken until you reset the password to the strong password. The toggle scripts expect the password to be in the correct state before switching.
+
+**Solution 6: Check SSH daemon configuration**
+```bash
+docker exec myeduconnect-web grep PasswordAuthentication /etc/ssh/sshd_config
+```
+Should show `PasswordAuthentication yes`. If not, fix it:
+```bash
+docker exec myeduconnect-web sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+docker exec myeduconnect-web sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+docker exec myeduconnect-web pkill -HUP sshd
+```
 
 ## Expected Results
 
