@@ -383,3 +383,57 @@
 [+] Weak sudo configuration applied
 [+] Student user can now escalate privileges without password
 [+] File: /etc/sudoers.d/student_weak_sudo
+2026-06-22 11:23:17 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:23:17 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:23:27 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:23:27 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:23:51 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:23:51 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:23:52 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:23:52 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:24:02 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:24:02 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:24:03 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:24:03 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:24:15 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:24:15 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:25:07 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:25:07 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:25:08 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:25:08 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:25:09 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:25:09 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:00 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:00 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:01 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:01 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:12 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:12 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:14 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:14 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:17 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:17 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:17 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:17 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:20 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:20 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+2026-06-22 11:30:20 - Toggle: ON - Script: /var/www/html/scripts/enable_weak_sudo.sh
+2026-06-22 11:30:20 - Return: 1 - Output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required

@@ -40,7 +40,6 @@ function ensureSecuritySettingsSeeded() {
             'weak_password_hashing' => 'Stores passwords in plaintext instead of using bcrypt hashing.',
             'http_api_communication' => 'Uses HTTP API URL instead of HTTPS for traffic visibility.',
             'weak_file_permissions' => 'Sets sensitive files with overly permissive file permissions (world-readable/writable).',
-            'exposed_database' => 'Exposes MySQL database port and phpMyAdmin to the host machine without authentication.',
         ];
         foreach ($required as $name => $desc) {
             dbExecute(
@@ -58,8 +57,6 @@ function ensureSecuritySettingsSeeded() {
         applyVulnerabilitySideEffects('weak_password_hashing', $weakPassword ? ((int)$weakPassword['enabled'] === 1) : false);
         $weakFilePerms = dbSelectOne("SELECT enabled FROM security_settings WHERE vulnerability_name = 'weak_file_permissions' LIMIT 1");
         applyVulnerabilitySideEffects('weak_file_permissions', $weakFilePerms ? ((int)$weakFilePerms['enabled'] === 1) : false);
-        $exposedDb = dbSelectOne("SELECT enabled FROM security_settings WHERE vulnerability_name = 'exposed_database' LIMIT 1");
-        applyVulnerabilitySideEffects('exposed_database', $exposedDb ? ((int)$exposedDb['enabled'] === 1) : false);
 
         $columns = dbSelect("SHOW COLUMNS FROM users LIKE 'about_me'");
         if (empty($columns)) {
@@ -627,7 +624,7 @@ function applyVulnerabilitySideEffects($name, $enabled)
         if (is_file($script)) {
             $output = [];
             $returnVar = 0;
-            exec('sudo ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
+            exec('sudo sh ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
             $outputStr = implode("\n", $output);
             @file_put_contents($logFile, date('Y-m-d H:i:s') . " - Return: $returnVar - Output: " . $outputStr . "\n", FILE_APPEND);
         } else {
@@ -642,9 +639,7 @@ function applyVulnerabilitySideEffects($name, $enabled)
         if (is_file($script)) {
             $output = [];
             $returnVar = 0;
-
-            exec('sudo ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
-
+            exec('sudo sh ' . escapeshellarg($script) . ' 2>&1', $output, $returnVar);
             $outputStr = implode("\n", $output);
             @file_put_contents($logFile, date('Y-m-d H:i:s') . " - Return: $returnVar - Output: " . $outputStr . "\n", FILE_APPEND);
         } else {
@@ -654,8 +649,6 @@ function applyVulnerabilitySideEffects($name, $enabled)
         syncDatabaseExposure($enabled);
     } elseif ($name === 'weak_file_permissions') {
         syncFilePermissions($enabled);
-    } elseif ($name === 'exposed_database') {
-        syncExposedDatabase($enabled);
     }
 }
 
@@ -766,353 +759,18 @@ $users = dbSelect("SELECT user_id, email, password, first_name, last_name, role,
 function syncFilePermissions($enabled)
 {
     $root = dirname(__DIR__, 2);
-    $logFile = $root . '/storage/file_permissions.log';
-    $timestamp = date('Y-m-d H:i:s');
-    
-    // Define sensitive files to manage
-    $sensitiveFiles = [
-        $root . '/storage/backups/backup.sql',
-        $root . '/storage/student_records.csv',
-    ];
-    
-    // Ensure student_records.csv exists
-    $studentRecordsFile = $root . '/storage/student_records.csv';
-    if (!file_exists($studentRecordsFile)) {
-        $csvContent = "student_id,email,first_name,last_name,grade_level,parent_email\n";
-        $csvContent .= "STU001,student1@myeduconnect.com,Alice,Williams,Grade 12,parent1@email.com\n";
-        $csvContent .= "STU002,student2@myeduconnect.com,Bob,Brown,Grade 12,parent2@email.com\n";
-        $csvContent .= "STU003,student3@myeduconnect.com,Charlie,Davis,Grade 11,parent3@email.com\n";
-        file_put_contents($studentRecordsFile, $csvContent);
-    }
-    
-    // Ensure backup.sql exists
-    $backupFile = $root . '/storage/backups/backup.sql';
-    $backupDir = dirname($backupFile);
-    if (!is_dir($backupDir)) {
-        mkdir($backupDir, 0755, true);
-    }
-    if (!file_exists($backupFile)) {
-        file_put_contents($backupFile, "-- Demo database backup (assignment lab artifact)\n-- Contains sample credentials for demonstration only.\n");
-    }
-    
-    // ATOMIC OPERATION: Track all results before committing
-    $results = [];
-    $allSuccess = true;
-    $errors = [];
+    $configFile = $root . '/app/config/config.php';
     
     if ($enabled) {
-        // VULNERABLE MODE: Set world-readable and world-writable permissions (666)
-        $targetPerms = 0666;
-        $modeStr = '666 (world-readable/writable)';
+        // Set weak file permissions (world-readable/writable)
+        if (file_exists($configFile)) {
+            @chmod($configFile, 0666);
+        }
     } else {
-        // SECURE MODE: Set restrictive permissions (640 - owner read/write, group read, others none)
-        $targetPerms = 0640;
-        $modeStr = '640 (owner rw, group r, others none)';
-    }
-    
-    foreach ($sensitiveFiles as $file) {
-        if (!file_exists($file)) {
-            $results[basename($file)] = [
-                'success' => false,
-                'error' => 'File does not exist',
-                'target' => $modeStr,
-                'actual' => 'N/A'
-            ];
-            $allSuccess = false;
-            $errors[] = basename($file) . ': File does not exist';
-            continue;
+        // Restore secure file permissions
+        if (file_exists($configFile)) {
+            @chmod($configFile, 0644);
         }
-        
-        // Store original permissions for rollback if needed
-        $originalPerms = substr(sprintf('%o', fileperms($file)), -4);
-        
-        // Attempt chmod
-        $result = chmod($file, $targetPerms);
-        
-        // Verify the change actually took effect
-        clearstatcache(true, $file);
-        $currentPerms = substr(sprintf('%o', fileperms($file)), -4);
-        $actualSuccess = $result && ($currentPerms === sprintf('%04o', $targetPerms));
-        
-        // WORKAROUND: If chmod failed, try using shell commands (for Windows/Docker)
-        if (!$actualSuccess) {
-            // Try using shell chmod command as a fallback
-            $octalPerms = sprintf('%04o', $targetPerms);
-            $shellCmd = "chmod $octalPerms " . escapeshellarg($file);
-            $shellOutput = [];
-            $shellReturn = 0;
-            @exec($shellCmd, $shellOutput, $shellReturn);
-            
-            // Re-verify after shell command
-            clearstatcache(true, $file);
-            $currentPerms = substr(sprintf('%o', fileperms($file)), -4);
-            $actualSuccess = ($shellReturn === 0) && ($currentPerms === sprintf('%04o', $targetPerms));
-            
-            if ($actualSuccess) {
-                $errorMsg = "chmod() failed but shell command succeeded";
-            } else {
-                // LAST RESORT: Try recreating the file with correct permissions
-                // This is a workaround for Windows/Docker filesystem restrictions
-                $tempFile = $file . '.tmp.' . uniqid();
-                if (copy($file, $tempFile)) {
-                    @chmod($tempFile, $targetPerms);
-                    clearstatcache(true, $tempFile);
-                    $tempPerms = substr(sprintf('%o', fileperms($tempFile)), -4);
-                    
-                    if ($tempPerms === sprintf('%04o', $targetPerms)) {
-                        // Temp file has correct permissions, replace original
-                        if (@rename($tempFile, $file)) {
-                            clearstatcache(true, $file);
-                            $currentPerms = substr(sprintf('%o', fileperms($file)), -4);
-                            $actualSuccess = ($currentPerms === sprintf('%04o', $targetPerms));
-                            if ($actualSuccess) {
-                                $errorMsg = "chmod() failed but file recreation succeeded";
-                            } else {
-                                $errorMsg = "chmod() failed, shell command failed, file recreation failed. Target: " . sprintf('%04o', $targetPerms) . ", Actual: $currentPerms. This may be due to Windows/Docker filesystem restrictions.";
-                                @unlink($tempFile);
-                            }
-                        } else {
-                            $errorMsg = "chmod() failed, shell command failed, could not replace file. Target: " . sprintf('%04o', $targetPerms) . ", Actual: $currentPerms. This may be due to Windows/Docker filesystem restrictions.";
-                            @unlink($tempFile);
-                        }
-                    } else {
-                        $errorMsg = "chmod() failed, shell command failed, temp file also has wrong permissions. Target: " . sprintf('%04o', $targetPerms) . ", Actual: $currentPerms. This may be due to Windows/Docker filesystem restrictions.";
-                        @unlink($tempFile);
-                    }
-                } else {
-                    $errorMsg = "chmod() failed, shell command failed, could not create temp file. Target: " . sprintf('%04o', $targetPerms) . ", Actual: $currentPerms. This may be due to Windows/Docker filesystem restrictions.";
-                }
-            }
-        } else {
-            $errorMsg = null;
-        }
-        
-        if (!$actualSuccess) {
-            $allSuccess = false;
-            $errors[] = basename($file) . ": $errorMsg";
-        }
-        
-        $results[basename($file)] = [
-            'success' => $actualSuccess,
-            'error' => $actualSuccess ? null : $errorMsg,
-            'target' => $modeStr,
-            'actual' => $currentPerms,
-            'original' => $originalPerms
-        ];
-        
-        $logMsg = $timestamp . " - File: " . basename($file) . 
-                   " - Mode: " . ($enabled ? 'VULNERABLE' : 'SECURE') .
-                   " - Target: $modeStr" .
-                   " - Actual: $currentPerms" .
-                   " - Success: " . ($actualSuccess ? 'YES' : 'NO');
-        
-        if (!$actualSuccess) {
-            $logMsg .= " - Error: $errorMsg";
-        }
-        $logMsg .= "\n";
-        
-        @file_put_contents($logFile, $logMsg, FILE_APPEND);
-    }
-    
-    // If not all files succeeded, this is a partial failure - log it prominently
-    if (!$allSuccess) {
-        $errorLog = $timestamp . " - PARTIAL FAILURE: Not all files could be updated to " . ($enabled ? 'VULNERABLE' : 'SECURE') . " mode.\n";
-        $errorLog .= $timestamp . " - Errors: " . implode('; ', $errors) . "\n";
-        @file_put_contents($logFile, $errorLog, FILE_APPEND);
-        
-        // Set a session error message for the UI
-        $_SESSION['file_permissions_error'] = 'Partial failure: Some files could not be updated. ' . implode('; ', $errors);
-    }
-    
-    // Log to audit trail (only if user is logged in)
-    try {
-        $userId = getCurrentUserId();
-        $userRole = getCurrentUserRole();
-        if ($userId) {
-            $action = $enabled ? 'ENABLE_WEAK_FILE_PERMISSIONS' : 'DISABLE_WEAK_FILE_PERMISSIONS';
-            $ipAddress = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
-            $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
-            
-            dbExecute(
-                "INSERT INTO audit_logs (user_id, user_type, action, table_name, record_id, old_values, new_values, ip_address, user_agent) 
-                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                [
-                    $userId,
-                    $userRole,
-                    $action,
-                    'security_settings',
-                    null,
-                    json_encode(['files' => $results, 'all_success' => $allSuccess]),
-                    json_encode(['mode' => $enabled ? 'VULNERABLE' : 'SECURE', 'target_permissions' => $modeStr]),
-                    $ipAddress,
-                    $userAgent
-                ]
-            );
-        }
-    } catch (Exception $e) {
-        // Continue even if audit logging fails
-    }
-    
-    return $allSuccess;
-}
-
-function getFilePermissionsStatus()
-{
-    $root = dirname(__DIR__, 2);
-    $status = [];
-    
-    $sensitiveFiles = [
-        'backup.sql' => $root . '/storage/backups/backup.sql',
-        'student_records.csv' => $root . '/storage/student_records.csv',
-    ];
-    
-    foreach ($sensitiveFiles as $name => $path) {
-        clearstatcache(true, $path);
-        
-        if (!file_exists($path)) {
-            $status[$name] = [
-                'path' => $path,
-                'permissions' => 'N/A',
-                'is_vulnerable' => false,
-                'exists' => false,
-                'readable' => false,
-                'writable' => false,
-                'expected_secure' => '0640',
-                'expected_vulnerable' => '0666',
-                'matches_expected' => false,
-                'error' => 'File does not exist',
-                'owner' => 'N/A',
-                'group' => 'N/A',
-                'symbolic' => 'N/A'
-            ];
-            continue;
-        }
-        
-        $perms = substr(sprintf('%o', fileperms($path)), -4);
-        $readable = is_readable($path);
-        $writable = is_writable($path);
-        
-        // Get file owner and group
-        $ownerInfo = posix_getpwuid(fileowner($path));
-        $groupInfo = posix_getgrgid(filegroup($path));
-        $owner = $ownerInfo ? $ownerInfo['name'] : 'unknown';
-        $group = $groupInfo ? $groupInfo['name'] : 'unknown';
-        
-        // Convert to symbolic notation
-        $symbolic = '';
-        $permsInt = intval($perms, 8);
-        $symbolic .= (($permsInt & 0400) ? 'r' : '-') . (($permsInt & 0200) ? 'w' : '-') . (($permsInt & 0100) ? 'x' : '-');
-        $symbolic .= (($permsInt & 0040) ? 'r' : '-') . (($permsInt & 0020) ? 'w' : '-') . (($permsInt & 0010) ? 'x' : '-');
-        $symbolic .= (($permsInt & 0004) ? 'r' : '-') . (($permsInt & 0002) ? 'w' : '-') . (($permsInt & 0001) ? 'x' : '-');
-        
-        // Determine if vulnerable based on actual permissions
-        $isVulnerable = ($perms == '0666' || $perms == '0777');
-        
-        // Get expected state based on current vulnerability setting
-        $vulnEnabled = isVulnerabilityEnabled('weak_file_permissions');
-        $expectedPerms = $vulnEnabled ? '0666' : '0640';
-        $matchesExpected = ($perms === $expectedPerms);
-        
-        $status[$name] = [
-            'path' => $path,
-            'permissions' => $perms,
-            'symbolic' => $symbolic,
-            'is_vulnerable' => $isVulnerable,
-            'exists' => true,
-            'readable' => $readable,
-            'writable' => $writable,
-            'expected_secure' => '0640',
-            'expected_vulnerable' => '0666',
-            'expected_current' => $expectedPerms,
-            'matches_expected' => $matchesExpected,
-            'error' => $matchesExpected ? null : "Permissions ($perms) do not match expected ($expectedPerms)",
-            'owner' => $owner,
-            'group' => $group
-        ];
-    }
-    
-    return $status;
-}
-
-function isExposedDatabaseAccessAllowed()
-{
-    $root = dirname(__DIR__, 2);
-    $stateFile = $root . '/storage/exposed_database_state.php';
-    
-    if (file_exists($stateFile)) {
-        include $stateFile;
-        return isset($exposed_database_enabled) && $exposed_database_enabled === true;
-    }
-    
-    // Default to secure (deny access) if file doesn't exist
-    return false;
-}
-
-function syncExposedDatabase($enabled)
-{
-    $root = dirname(__DIR__, 2);
-    $logFile = $root . '/storage/database_exposure.log';
-    $timestamp = date('Y-m-d H:i:s');
-    
-    // Log the toggle action
-    $logMsg = $timestamp . " - Toggle: " . ($enabled ? 'ON' : 'OFF') . " - Exposed Database\n";
-    @file_put_contents($logFile, $logMsg, FILE_APPEND);
-    
-    // Create state file for admin panel to check
-    $stateFile = $root . '/storage/exposed_database_state.php';
-    
-    if ($enabled) {
-        // VULNERABLE MODE: Allow access
-        $logMsg .= $timestamp . " - VULNERABLE MODE: Database connection information shown in admin panel\n";
-        $logMsg .= $timestamp . " - MySQL port 3307 and phpMyAdmin port 8081 are exposed (requires docker-compose restart to change)\n";
-        $logMsg .= $timestamp . " - Note: phpMyAdmin access cannot be dynamically blocked without container restart\n";
-        
-        // Create state file that allows access
-        $stateContent = '<?php
-$exposed_database_enabled = true;
-?>';
-        file_put_contents($stateFile, $stateContent);
-    } else {
-        // SECURE MODE: Block access
-        $logMsg .= $timestamp . " - SECURE MODE: Database connection information hidden in admin panel\n";
-        $logMsg .= $timestamp . " - Note: phpMyAdmin and MySQL ports remain exposed (Docker Compose limitation)\n";
-        $logMsg .= $timestamp . " - Note: To fully block phpMyAdmin, restart containers with modified docker-compose.yml\n";
-        
-        // Create state file that denies access
-        $stateContent = '<?php
-$exposed_database_enabled = false;
-?>';
-        file_put_contents($stateFile, $stateContent);
-    }
-    @file_put_contents($logFile, $logMsg, FILE_APPEND);
-    
-    // Log to audit trail (only if user is logged in)
-    try {
-        $userId = getCurrentUserId();
-        $userRole = getCurrentUserRole();
-        if ($userId) {
-            $action = $enabled ? 'ENABLE_EXPOSED_DATABASE' : 'DISABLE_EXPOSED_DATABASE';
-            $ipAddress = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
-            $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
-            
-            dbExecute(
-                "INSERT INTO audit_logs (user_id, user_type, action, table_name, record_id, old_values, new_values, ip_address, user_agent) 
-                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                [
-                    $userId,
-                    $userRole,
-                    $action,
-                    'security_settings',
-                    null,
-                    json_encode(['mode' => $enabled ? 'SECURE' : 'VULNERABLE']),
-                    json_encode(['mode' => $enabled ? 'VULNERABLE' : 'SECURE', 'note' => 'phpMyAdmin access requires container restart to fully block']),
-                    $ipAddress,
-                    $userAgent
-                ]
-            );
-        }
-    } catch (Exception $e) {
-        // Continue even if audit logging fails
     }
 }
 
@@ -1141,76 +799,28 @@ function isRequestHttps()
 
 function enforceApiTransportPolicy()
 {
-    $host = parse_url(APP_URL, PHP_URL_HOST) ?: 'localhost';
-
     $httpsRequired = !isVulnerabilityEnabled('http_api_communication');
     $isHttps = isRequestHttps();
 
-    // SECURE MODE
     if ($httpsRequired && !$isHttps) {
-
-        $target =
-            'https://' .
-            $host .
-            ':8443' .
-            $_SERVER['REQUEST_URI'];
-
-        header("Location: $target");
+        http_response_code(403);
+        header('Content-Type: application/json');
+        echo json_encode([
+            'ok' => false,
+            'error' => 'HTTPS required while HTTP API communication is disabled.',
+            'mode' => 'https',
+        ]);
         exit;
     }
 
-    // VULNERABLE MODE
     if (!$httpsRequired && $isHttps) {
-
-        $target =
-            'http://' .
-            $host .
-            ':8080' .
-            $_SERVER['REQUEST_URI'];
-
-        header("Location: $target");
+        http_response_code(403);
+        header('Content-Type: application/json');
+        echo json_encode([
+            'ok' => false,
+            'error' => 'HTTP required while HTTP API communication vulnerability is enabled.',
+            'mode' => 'http',
+        ]);
         exit;
     }
-}
-
-function enforceWebsiteTransportPolicy()
-{
-    $host = parse_url(APP_URL, PHP_URL_HOST) ?: 'localhost';
-
-    $httpsRequired = !isVulnerabilityEnabled('http_api_communication');
-    $isHttps = isRequestHttps();
-
-    // SECURE MODE
-    if ($httpsRequired && !$isHttps) {
-
-        $target =
-            'https://' .
-            $host .
-            ':8443' .
-            $_SERVER['REQUEST_URI'];
-
-        header("Location: $target");
-        exit;
-    }
-
-    // VULNERABLE MODE
-    if (!$httpsRequired && $isHttps) {
-
-        $target =
-            'http://' .
-            $host .
-            ':8080' .
-            $_SERVER['REQUEST_URI'];
-
-        header("Location: $target");
-        exit;
-    }
-}
-
-// Apply website transport policy
-if (
-    isset($_SERVER['REQUEST_URI']) &&
-    strpos($_SERVER['REQUEST_URI'], '/api/') === false
-) {
-    enforceWebsiteTransportPolicy();
 }
